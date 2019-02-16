@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests;
+namespace CeddyG\ClaraContact\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -24,7 +24,10 @@ class ContactCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'id_contact_category' => 'numeric',	    'name_contact_category' => 'string|max:45',	    'created_at' => 'string',	    'updated_at' => 'string'
+            'id_contact_category' => 'numeric',
+	    'name_contact_category' => 'string|max:45',
+	    'created_at' => 'string',
+	    'updated_at' => 'string'
         ];
     }
 }

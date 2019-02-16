@@ -59,7 +59,7 @@
                 },
                 columns: [
                     { 'data': 'id_contact' },
-                    { 'data': 'users.last_name' },
+                    { 'data': 'mail_contact' },
                     { 'data': 'contact_category.name_contact_category' },
                     { 'data': 'subject_contact' },
                     {

@@ -9,12 +9,8 @@
                     <h3 class="box-title">Message</h3>
                 </div>
                 <div class="box-body">
-                    <strong>{{ __('clara-contact::contact.fk_users') }}</strong><br />
-                    <span>{{ $oItem->users->first_name }} {{ $oItem->users->last_name }}</span>
-                    <hr>
-                    
                     <strong>{{ __('clara-contact::contact.mail') }}</strong><br />
-                    <span>{{ $oItem->users->email }}</span>
+                    <span>{{ $oItem->mail_contact }}</span>
                     <hr>
                     
                     <strong>{{ __('clara-contact::contact.fk_contact_category') }}</strong><br />

@@ -1,0 +1,27 @@
+{
+    "name": "ceddyg/clara-contact",
+    "description": "Add contact form to Clara.",
+    "keywords": ["laravel", "clara", "contact"],
+    "authors": [
+        {
+            "name": "CeddyG"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "CeddyG\\ClaraContact\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CeddyG\\ClaraContact\\ContactServiceProvider"
+            ]
+        }
+    }
+}

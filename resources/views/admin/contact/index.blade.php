@@ -55,7 +55,7 @@
             $('#tab-admin').DataTable({
                 serverSide: true,
                 ajax: {
-                    'url': '{{ route('admin.contact.index.ajax') }}'
+                    'url': '{{ route('api.admin.contact.index') }}'
                 },
                 columns: [
                     { 'data': 'id_contact' },

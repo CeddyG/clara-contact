@@ -4,8 +4,6 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-use Sentinel;
-
 class ContactRequest extends FormRequest
 {
     /**
@@ -17,18 +15,6 @@ class ContactRequest extends FormRequest
     {
         return true;
     }
-    
-    public function all($keys = null)
-    {
-        $aAttribute = parent::all($keys);
-        
-        if (Sentinel::check())
-        {
-            $aAttribute['fk_users'] = Sentinel::getUser()->id;
-        }
-        
-        return $aAttribute;
-    }
 
     /**
      * Get the validation rules that apply to the request.
@@ -39,8 +25,8 @@ class ContactRequest extends FormRequest
     {
         return [
             'id_contact'            => 'numeric',
-            'fk_users'              => 'numeric',
             'fk_contact_category'   => 'numeric',
+            'mail_contact'          => 'required|string|max:255',
             'subject_contact'       => 'required|string|max:60',
             'text_contact'          => 'required',
             'created_at'            => 'string',

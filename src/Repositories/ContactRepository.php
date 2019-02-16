@@ -13,22 +13,15 @@ class ContactRepository extends QueryBuilderRepository
     protected $sDateFormatToGet = 'd/m/Y';
     
     protected $aRelations = [
-        'users',
 		'contact_category'
     ];
 
     protected $aFillable = [
-        'fk_users',
 		'fk_contact_category',
+        'mail_contact',
 		'subject_contact',
 		'text_contact'
     ];
-    
-   
-    public function users()
-    {
-        return $this->belongsTo('App\Repositories\UserRepository', 'fk_users');
-    }
 
     public function contact_category()
     {

@@ -2,7 +2,7 @@
 
 namespace CeddyG\ClaraContact\Events\Contact;
 
-use App\Events\DefaultEvent\IdAndInputEvent;
+use CeddyG\Clara\Events\DefaultEvent\IdAndInputEvent;
 
 /**
  * Description of AfterStoreEvent
